@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeTableViewCell" rowHeight="163" id="KGk-i7-Jjw" customClass="HomeTableViewCell" customModule="ShoppinList" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="364" height="163"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="364" height="163"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jHt-Sb-xjp" customClass="MakeRoundShadowView" customModule="ShoppinList" customModuleProvider="target">
+                        <rect key="frame" x="8" y="8" width="348" height="147"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="watch2" translatesAutoresizingMaskIntoConstraints="NO" id="d5a-MT-0JJ">
+                                <rect key="frame" x="8" y="8" width="131" height="131"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="d5a-MT-0JJ" secondAttribute="height" multiplier="1:1" id="5Gm-CX-jrF"/>
+                                    <constraint firstAttribute="height" constant="131" id="TrD-z3-XBD"/>
+                                    <constraint firstAttribute="width" constant="131" id="meI-fN-3y9"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n4B-bI-t9H">
+                                <rect key="frame" x="317" y="113" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ret-Ft-6Ux"/>
+                                    <constraint firstAttribute="width" constant="30" id="w8d-sc-tTq"/>
+                                </constraints>
+                                <state key="normal" image="star" catalog="system"/>
+                                <connections>
+                                    <action selector="addFaviretButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="eOx-hn-DDV"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="j7f-0F-rrb">
+                                <rect key="frame" x="159" y="27.5" width="154" height="92.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Watch Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QIH-Cu-cHN">
+                                        <rect key="frame" x="25.5" y="0.0" width="103" height="22.5"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$399.99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ud-x5-fTB">
+                                        <rect key="frame" x="37" y="30.5" width="80.5" height="26"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6vl-0K-Y4v">
+                                        <rect key="frame" x="27" y="64.5" width="100" height="28"/>
+                                        <color key="backgroundColor" red="0.10343433171510696" green="0.48844337463378906" blue="0.61789435148239136" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="5" maxX="10" maxY="5"/>
+                                        <state key="normal" title="Add to card">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="addCardButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="b1d-zK-d4V"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="n4B-bI-t9H" secondAttribute="bottom" constant="4" id="4A4-br-XWh"/>
+                            <constraint firstAttribute="trailing" secondItem="j7f-0F-rrb" secondAttribute="trailing" constant="35" id="8Dw-Gw-J81"/>
+                            <constraint firstItem="j7f-0F-rrb" firstAttribute="centerY" secondItem="jHt-Sb-xjp" secondAttribute="centerY" id="9Xn-bk-Ovu"/>
+                            <constraint firstAttribute="bottom" secondItem="d5a-MT-0JJ" secondAttribute="bottom" constant="8" id="Bj0-AQ-AsP"/>
+                            <constraint firstItem="d5a-MT-0JJ" firstAttribute="leading" secondItem="jHt-Sb-xjp" secondAttribute="leading" constant="8" id="LDi-Lj-Uol"/>
+                            <constraint firstItem="d5a-MT-0JJ" firstAttribute="top" secondItem="jHt-Sb-xjp" secondAttribute="top" constant="8" id="bRh-6w-Hfq"/>
+                            <constraint firstItem="j7f-0F-rrb" firstAttribute="leading" secondItem="d5a-MT-0JJ" secondAttribute="trailing" constant="20" id="qAk-mZ-RDa"/>
+                            <constraint firstAttribute="trailing" secondItem="n4B-bI-t9H" secondAttribute="trailing" constant="1" id="rWN-aT-HrC"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="jHt-Sb-xjp" secondAttribute="trailing" constant="8" id="PNC-pf-D6A"/>
+                    <constraint firstItem="jHt-Sb-xjp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="XwI-9Y-tLH"/>
+                    <constraint firstAttribute="bottom" secondItem="jHt-Sb-xjp" secondAttribute="bottom" constant="8" id="nLm-rx-ppu"/>
+                    <constraint firstItem="jHt-Sb-xjp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="rYD-Zs-S73"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="addFaviretButtonTap" destination="n4B-bI-t9H" id="Vnd-Mq-mLr"/>
+                <outlet property="addTapCarButton" destination="6vl-0K-Y4v" id="Or5-lF-Nx3"/>
+                <outlet property="productImage" destination="d5a-MT-0JJ" id="cRC-nW-GpE"/>
+                <outlet property="productNameLabel" destination="QIH-Cu-cHN" id="wOp-6W-RxG"/>
+                <outlet property="productPriceLabel" destination="4ud-x5-fTB" id="1D9-q1-ScD"/>
+            </connections>
+            <point key="canvasLocation" x="-46.376811594202906" y="-23.102678571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="star" catalog="system" width="128" height="116"/>
+        <image name="watch2" width="711" height="474"/>
+    </resources>
+</document>

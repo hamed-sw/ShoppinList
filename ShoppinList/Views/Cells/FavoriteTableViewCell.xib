@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FavoriteTableViewCell" rowHeight="141" id="KGk-i7-Jjw" customClass="FavoriteTableViewCell" customModule="ShoppinList" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="363" height="141"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="363" height="141"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vcs-je-kay" customClass="MakeRoundShadowView" customModule="ShoppinList" customModuleProvider="target">
+                        <rect key="frame" x="8" y="8" width="347" height="125"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="watch2" translatesAutoresizingMaskIntoConstraints="NO" id="7AR-Ed-OZE">
+                                <rect key="frame" x="8" y="8" width="112" height="112"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="112" id="HI6-dk-c73"/>
+                                    <constraint firstAttribute="width" secondItem="7AR-Ed-OZE" secondAttribute="height" multiplier="1:1" id="rMa-Zp-p9Z"/>
+                                    <constraint firstAttribute="height" constant="112" id="zPz-4w-hnb"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="xRZ-dX-lB8">
+                                <rect key="frame" x="137" y="16.5" width="180" height="92.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name of watch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gmk-fC-ZrF">
+                                        <rect key="frame" x="30.5" y="0.0" width="119" height="22.5"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$499.99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GsW-WL-MGv">
+                                        <rect key="frame" x="50" y="30.5" width="80.5" height="26"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4tD-a8-WJR">
+                                        <rect key="frame" x="66.5" y="64.5" width="47" height="28"/>
+                                        <color key="backgroundColor" red="0.10343433171510696" green="0.48844337463378906" blue="0.61789435148239136" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="5" maxX="10" maxY="5"/>
+                                        <state key="normal" title="Buy">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buyTapButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ey9-IQ-Uzg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x9u-EC-WhN">
+                                <rect key="frame" x="325.5" y="0.0" width="21.5" height="17.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <state key="normal" image="delete.left" catalog="system"/>
+                                <connections>
+                                    <action selector="deleteTapButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="CWC-dl-YOa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7AR-Ed-OZE" firstAttribute="top" secondItem="Vcs-je-kay" secondAttribute="top" constant="8" id="Ite-9h-g8z"/>
+                            <constraint firstItem="xRZ-dX-lB8" firstAttribute="leading" secondItem="7AR-Ed-OZE" secondAttribute="trailing" constant="17" id="JQH-CU-ZPe"/>
+                            <constraint firstAttribute="bottom" secondItem="7AR-Ed-OZE" secondAttribute="bottom" constant="5" id="LXI-0N-ghA"/>
+                            <constraint firstItem="xRZ-dX-lB8" firstAttribute="centerY" secondItem="Vcs-je-kay" secondAttribute="centerY" id="Ndp-9G-uZH"/>
+                            <constraint firstAttribute="trailing" secondItem="x9u-EC-WhN" secondAttribute="trailing" id="VfH-yf-ak3"/>
+                            <constraint firstItem="7AR-Ed-OZE" firstAttribute="leading" secondItem="Vcs-je-kay" secondAttribute="leading" constant="8" id="WhF-HN-yAM"/>
+                            <constraint firstAttribute="trailing" secondItem="xRZ-dX-lB8" secondAttribute="trailing" constant="30" id="fi4-dr-cka"/>
+                            <constraint firstItem="x9u-EC-WhN" firstAttribute="top" secondItem="Vcs-je-kay" secondAttribute="top" id="vix-e5-Znf"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Vcs-je-kay" secondAttribute="bottom" constant="8" id="4Kg-2H-Tem"/>
+                    <constraint firstItem="Vcs-je-kay" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="6Cv-LQ-5LB"/>
+                    <constraint firstAttribute="trailing" secondItem="Vcs-je-kay" secondAttribute="trailing" constant="8" id="JlQ-W6-1LX"/>
+                    <constraint firstItem="Vcs-je-kay" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="eNp-pk-cDP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="buyButton" destination="4tD-a8-WJR" id="858-ua-wKV"/>
+                <outlet property="deleteButton" destination="x9u-EC-WhN" id="uBe-VQ-Lfs"/>
+                <outlet property="favoriteProductImage" destination="7AR-Ed-OZE" id="n5W-sG-WFs"/>
+                <outlet property="nameOfFavoritePrductLabel" destination="Gmk-fC-ZrF" id="ULj-hV-1AH"/>
+                <outlet property="priceFavoriteProductLabel" destination="GsW-WL-MGv" id="c5b-3Y-4p1"/>
+            </connections>
+            <point key="canvasLocation" x="-8" y="-8"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="delete.left" catalog="system" width="128" height="104"/>
+        <image name="watch2" width="711" height="474"/>
+    </resources>
+</document>
