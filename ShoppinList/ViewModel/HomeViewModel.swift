@@ -6,15 +6,25 @@
 //
 
 import Foundation
+protocol HomeViewModelDelegae: class {
+    func update()
+}
 
 class HomeViewModel {
     
     var products: ProductModel?
+    weak var delegate: HomeViewModelDelegae?
     
+    func productSearch() {
+        JsonParsing.parseJsonFile { [weak self] product in
+            self?.products = product
+            self?.delegate?.update()
+        }
+    }
     
     /// Function that returns total number of product
     /// - Returns: return total product
-    func getTotalNumberOfProducts() -> Int {
+    func getTotalNumberOfProducts() -> Int? {
         let totalProduct = products?.documents?.count
         return totalProduct ?? 0
     }
